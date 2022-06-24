@@ -1,0 +1,197 @@
+<?xml version="1.0" ?>
+<robot name="RHEXA" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find RHEXA_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find RHEXA_description)/urdf/RHEXA.trans" />
+<xacro:include filename="$(find RHEXA_description)/urdf/RHEXA.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="3.019715383457247e-11 3.0286398058123193e-12 0.04300979484933489" rpy="0 0 0"/>
+    <mass value="4.071597447876389"/>
+    <inertia ixx="0.006647" iyy="0.00646" izz="0.007974" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RHEXA_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RHEXA_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Joint1_1">
+  <inertial>
+    <origin xyz="0.0050635771622651584 -0.008025181268731472 0.010718296440327985" rpy="0 0 0"/>
+    <mass value="0.4253453909942233"/>
+    <inertia ixx="0.000187" iyy="0.000136" izz="0.000223" ixy="4.4e-05" iyz="5.1e-05" ixz="-2.6e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.09" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RHEXA_description/meshes/Joint1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.09" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RHEXA_description/meshes/Joint1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Joint2_1">
+  <inertial>
+    <origin xyz="-0.030830897810810158 0.04431085970798134 0.10664707299031788" rpy="0 0 0"/>
+    <mass value="1.6609996524765318"/>
+    <inertia ixx="0.009226" iyy="0.007694" izz="0.002372" ixy="-0.0" iyz="-0.003481" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0045 0.035737 -0.102223" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RHEXA_description/meshes/Joint2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0045 0.035737 -0.102223" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RHEXA_description/meshes/Joint2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Joint3_1">
+  <inertial>
+    <origin xyz="-0.008919833343826216 0.04949986904370733 0.11056779324069352" rpy="0 0 0"/>
+    <mass value="0.2466726132340227"/>
+    <inertia ixx="0.000815" iyy="6.7e-05" izz="0.000852" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.025096 -0.078385 -0.187949" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RHEXA_description/meshes/Joint3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.025096 -0.078385 -0.187949" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RHEXA_description/meshes/Joint3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Joint4_1">
+  <inertial>
+    <origin xyz="-0.015446598300301598 0.41488486904370714 -0.10148320675930594" rpy="0 0 0"/>
+    <mass value="1.0598755331662075"/>
+    <inertia ixx="0.002025" iyy="0.000454" izz="0.002183" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.009838 0.162 -0.4" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RHEXA_description/meshes/Joint4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.009838 0.162 -0.4" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RHEXA_description/meshes/Joint4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Joint5_1">
+  <inertial>
+    <origin xyz="0.003226145298373822 -0.39829393075551073 0.11148279324069413" rpy="0 0 0"/>
+    <mass value="0.32403192309695955"/>
+    <inertia ixx="0.0006" iyy="0.000202" izz="0.000602" ixy="-1.1e-05" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.021162 -0.77577 -0.187034" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RHEXA_description/meshes/Joint5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.021162 -0.77577 -0.187034" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RHEXA_description/meshes/Joint5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Joint5_1_1">
+  <inertial>
+    <origin xyz="-1.5829945507195298e-08 0.08926773526406734 -2.0675930589852953e-07" rpy="0 0 0"/>
+    <mass value="0.2540678574498573"/>
+    <inertia ixx="0.000686" iyy="0.00011" izz="0.000695" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.024831 -0.330885 -0.298517" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RHEXA_description/meshes/Joint5_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.024831 -0.330885 -0.298517" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://RHEXA_description/meshes/Joint5_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Revolución1" type="continuous">
+  <origin xyz="0.0 0.0 0.09" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Joint1_1"/>
+  <axis xyz="0.0 0.0 -1.0"/>
+</joint>
+
+<joint name="Revolución2" type="continuous">
+  <origin xyz="0.0045 -0.035737 0.012223" rpy="0 0 0"/>
+  <parent link="Joint1_1"/>
+  <child link="Joint2_1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+</joint>
+
+<joint name="Revolución3" type="continuous">
+  <origin xyz="0.020596 0.114122 0.085726" rpy="0 0 0"/>
+  <parent link="Joint2_1"/>
+  <child link="Joint3_1"/>
+  <axis xyz="1.0 -0.0 -0.0"/>
+</joint>
+
+<joint name="Revolución4" type="continuous">
+  <origin xyz="-0.034934 -0.240385 0.212051" rpy="0 0 0"/>
+  <parent link="Joint3_1"/>
+  <child link="Joint4_1"/>
+  <axis xyz="-1.0 -0.0 0.0"/>
+</joint>
+
+<joint name="Revolución5" type="continuous">
+  <origin xyz="0.031 0.93777 -0.212966" rpy="0 0 0"/>
+  <parent link="Joint4_1"/>
+  <child link="Joint5_1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+</joint>
+
+<joint name="Corredera6" type="prismatic">
+  <origin xyz="0.003669 -0.444885 0.111483" rpy="0 0 0"/>
+  <parent link="Joint5_1"/>
+  <child link="Joint5_1_1"/>
+  <axis xyz="-0.0 1.0 -0.0"/>
+  <limit upper="0.0" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+</robot>
